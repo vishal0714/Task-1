@@ -22,7 +22,7 @@
 
         <div class="card">
             <div class="input-group">
-                <input type="radio" name="choose" class="input-radio" id="unit1">
+                <input type="radio" name="choose" class="input-radio" id="unit1" required>
                 <div class="input-text">
                     <div class="card-discount">
                         <h2>1 Unit</h2>
@@ -61,7 +61,7 @@
                     <p>Standard Price</p>
                 </div>
             </div>
-            <div>
+            <div class="price">
                 <h4>$10.00 USD</h4>
                 <strike>$24.00 USD</strike>
             </div>
@@ -72,12 +72,12 @@
                 <p>MOST POPULAR</p>
             </div>
             <div class="input-group">
-                <input type="radio" name="choose" class="input-radio" id="unit2">
+                <input type="radio" name="choose" class="input-radio" id="unit2" checked required>
                 <div class="input-text">
                     <div class="card-discount">
                         <h2>2 Unit</h2>
                         <span class="discount">20% Off</span>
-                        <div class="details">
+                        <div class="details inv">
                             <div>
                                 #1 Size:
                                 <select>
@@ -110,14 +110,14 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="price">
                 <h4>18.00 USD</h4>
                 <strike>$24.00 USD</strike>
             </div>
         </div>
         <div class="card">
             <div class="input-group">
-                <input type="radio" name="choose" class="input-radio" id="unit3">
+                <input type="radio" name="choose" class="input-radio" id="unit3" required>
                 <div class="input-text">
                     <div class="card-discount">
                         <h2>3 Unit</h2>
@@ -155,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="price">
                 <h4>$24.00 USD</h4>
                 <strike>$24.00 USD</strike>
             </div>
@@ -168,7 +168,7 @@
                 <h3>Free Delivery</h3>
             </div>
             <div class="total">
-                <p>Total : $18.00 USD</p>
+                Total :<span id="total">$18.00 USD</span>
             </div>
 
         </div>
