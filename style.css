@@ -1,0 +1,173 @@
+/* Import font from Google Fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --gulabi: rgb(255, 107, 130);
+}
+
+/* Css Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* main container styling  */
+
+.container {
+  width: minmax(400px, 80%);
+  gap: 30px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+/* page  Heading Styling */
+header {
+  color: var(--gulabi);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.hr {
+  width: 100%;
+}
+.hr::before {
+  display: block;
+  width: 60%;
+  content: "";
+  border-bottom: 2px solid rgb(234, 234, 234);
+  margin: auto;
+}
+
+/* pricing card style */
+.card {
+  position: relative;
+  z-index: 5;
+  top: 15px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  border: 2px solid rgb(234, 234, 234);
+  padding: 20px;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 4px;
+  background-color: var(--gulabi);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.offer input:checked ~ .details {
+  display: block;
+}
+#heading {
+  text-align: center;
+  min-width: 130px;
+  position: absolute;
+  background: white;
+}
+
+.input-group {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-discount {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+.discount {
+  border-radius: 5px;
+  padding: 5px;
+  background: var(--gulabi);
+}
+
+input[type="radio"] {
+  accent-color: var(--gulabi);
+  width: 30px;
+  height: 20px;
+}
+
+/* Total section styling */
+
+.main-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 61%;
+  padding: 10px;
+}
+.foot-aside {
+  color: var(--gulabi);
+}
+
+.total h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+/* Button styling  */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  gap: 10px;
+  background-color: var(--gulabi);
+  color: white;
+  padding: 14px;
+  border: none;
+  width: 60%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer styling  */
+
+.footer {
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 60%;
+}
+
+.footer-content {
+  color: rgb(165, 165, 165);
+}
